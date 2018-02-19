@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MCC</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_net_price">Enter Net Price</string>
+    <string name="refresh">Refresh</string>
+    <string name="rs">\u0024</string>
+</resources>

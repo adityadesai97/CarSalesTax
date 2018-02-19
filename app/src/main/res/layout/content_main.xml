@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.adityadesai.mcc.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Sales Tax Calculator"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="180dp"/>
+
+    <LinearLayout
+        android:id="@+id/netPriceInputLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27dp"
+            android:text="@string/rs"
+            android:layout_marginRight="20dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/netPriceTextInputLayout"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/netPriceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="@string/enter_net_price"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/netPriceLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net Price:"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/netPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/salesTaxLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales Tax:"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/salesTaxTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grossPriceLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gross Price:"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/grossPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
